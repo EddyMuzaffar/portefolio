@@ -1,0 +1,12 @@
+img {
+  
+    width: 100%;
+    object-fit: cover;
+     height: max(10rem, 25vh);
+    max-height: max(10rem, 30vh);
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    mix-blend-mode: var(--card-blend-mode);
+    
+      
+}

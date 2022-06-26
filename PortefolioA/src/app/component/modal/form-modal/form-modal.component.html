@@ -1,0 +1,23 @@
+<div>
+    <form>
+        <div>
+            <label for="nom">Nom du project</label>
+            <input type="text" id="name" name="nom" [(ngModel)]="nom">
+            </div>
+            <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" [(ngModel)]="date">
+            </div>
+            <div>
+            <label for="repo">Lien du repository</label>
+            <input type="text" id="repo" name="repo" [(ngModel)]="repo">
+            </div>
+            <div>
+            <label for="message">Description du project</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." [(ngModel)]="message"></textarea>
+            </div>
+            <div>
+            <button type="submit" (click)="submitForm()">Ajouter le projet</button>
+            </div>
+    </form>
+</div>

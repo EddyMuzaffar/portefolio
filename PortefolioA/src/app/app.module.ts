@@ -25,6 +25,9 @@ import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IntroComponent } from './component/intro/intro.component';
+
+
 
 @NgModule({
   declarations: [
@@ -36,7 +39,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CardComponent,
     ModalProjectComponent,
     ProjectHeaderComponent,
-    FormModalComponent
+    FormModalComponent,
+    IntroComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -55,9 +60,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule
-   
-   
-    
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

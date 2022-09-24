@@ -1,9 +1,15 @@
- <li class="card" id="card" (click)="open()" style="cursor: pointer;">
+<div (mouseover)="changeText=true" (mouseout)="changeText=false">
+  <li *ngIf="changeText" class="card-over" id="card-over"  (click)="open()" style="cursor: pointer;">
+    <div  style="font-size: 30px; font-family: Roboto" @fadeIn @fadeOut  >{{carda.name}}</div>
+    <div class="date">2019</div>
+  </li>
+  <li *ngIf="!changeText" class="card" id="card" (click)="open()" style="cursor: pointer;">
     <img src={{carda.photo}}>
     <div  class="bande">{{carda.name}}</div>
     <div class="date">2019</div>
   </li>
+</div>
 
-  <script>
-    
-  </script>
+
+
+

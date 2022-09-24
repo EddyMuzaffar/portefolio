@@ -6,7 +6,8 @@ import { map } from 'rxjs/operators';
 
 const API_URL = 'http://127.0.0.1:42001/API/formations'
 const API_UR = 'http://127.0.0.1:42001/API/formation'
-const API_U = 'http://127.0.0.1:42001/API/postCard'
+const
+  API_U = 'http://127.0.0.1:42001/API/postCard'
 @Injectable({
   providedIn: 'root'
 })
@@ -52,7 +53,7 @@ getCardById(cardid :number):Observable<Card[]>{
   let API_URL_BYID = API_UR + '?' + cardid;
   console.log(API_URL_BYID);
   return  this.http.get<Card[]>(API_URL_BYID);
- 
+
 }
 
 toto(){
